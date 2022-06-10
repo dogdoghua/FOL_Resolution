@@ -1,0 +1,20 @@
+16
+@x (Pred1(x) => Pred2(x))
+@x (Pred7(x) & Pred9(x) => Pred5(x))
+@x,y (Pred3(x,y) => Pred4(x,y) & Pred4(y,x))
+@x,y (Pred5(x) & Pred4(x,y) & Pred2(y) => Pred6(x,y))
+@x y z (Pred3(x,y) & Pred3(y,z) => Pred3(x,z))
+Pred1(M)
+Pred1(D)
+Pred7(J)
+Pred7(H)
+Pred8(H)
+Pred8(M)
+Pred9(D)
+Pred9(J)
+Pred4(D,M)
+Pred3(M,H)
+Pred3(H,J)
+2
+Pred6(x,M),x?
+Pred6(M,J)
